@@ -1,4 +1,4 @@
-##R Teaching Materials collection
+## R Teaching Materials collection
 
 
 ### dinosuaRus example
