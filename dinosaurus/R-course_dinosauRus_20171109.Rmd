@@ -1,0 +1,49 @@
+---
+title: "DinosauRus"
+output: 
+  html_document:
+    code_folding: hide
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include = FALSE}
+library(tidyverse)
+library(datasauRus)
+library(knitr)
+```
+
+From (https://www.autodeskresearch.com/publications/samestats)
+
+## The dataset...
+```{r}
+datasaurus_dozen
+```
+
+## Summary statistics
+
+```{r}
+
+summary_stats <- datasaurus_dozen %>% 
+  group_by(dataset) %>% 
+  mutate_at(vars(x, y), funs(mean, sd)) %>% 
+  mutate(cor = cor(x, y)) %>% 
+  select(-x, -y) %>% 
+  distinct() %>% 
+  mutate_if(is_double, round, 2)
+
+kable(summary_stats)
+```
+
+## Scatter plots
+
+```{r}
+ggplot(datasaurus_dozen, aes(x, y, colour = dataset)) +
+  geom_point() +
+  facet_wrap(~ dataset) +
+  theme(legend.position = "none") +
+  labs(x = NULL, y = NULL)
+```
