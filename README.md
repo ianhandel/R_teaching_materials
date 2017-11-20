@@ -6,6 +6,8 @@
 
 ### Why plot???
 
+[Anscombe-quartet](https://github.com/ianhandel/R_teaching_materials/blob/master/anscombe/anscombe-quartet_2017-11-20.md)
+
 [DinsosauRus](https://github.com/ianhandel/R_teaching_materials/blob/master/dinosaurus/R-course_dinosauRus_20171109.md)
 
 ### Colour
