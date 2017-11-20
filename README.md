@@ -10,6 +10,12 @@
 
 [DinsosauRus](https://github.com/ianhandel/R_teaching_materials/blob/master/dinosaurus/R-course_dinosauRus_20171109.md)
 
+### Graphical theory
+
+[Bill Cleveland paper](http://info.slis.indiana.edu/~katy/S637-S11/cleveland84.pdf)
+
+![](./perception/visual-perception_2017-11-20.png)
+
 ### Colour
 
 [Colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
