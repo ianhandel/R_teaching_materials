@@ -35,7 +35,7 @@ summary_stats <- datasaurus_dozen %>%
   distinct() %>% 
   mutate_if(is_double, round, 2)
 
-kable(summary_stats)
+kable(summary_stats, format = "html")
 ```
 
 ## Scatter plots

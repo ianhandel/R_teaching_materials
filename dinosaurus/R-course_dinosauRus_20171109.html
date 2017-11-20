@@ -166,122 +166,290 @@ $(document).ready(function () {
   distinct() %&gt;% 
   mutate_if(is_double, round, 2)
 
-kable(summary_stats)</code></pre>
+kable(summary_stats, format = &quot;html&quot;)</code></pre>
 <table>
 <thead>
-<tr class="header">
-<th align="left">dataset</th>
-<th align="right">x_mean</th>
-<th align="right">y_mean</th>
-<th align="right">x_sd</th>
-<th align="right">y_sd</th>
-<th align="right">cor</th>
+<tr>
+<th style="text-align:left;">
+dataset
+</th>
+<th style="text-align:right;">
+x_mean
+</th>
+<th style="text-align:right;">
+y_mean
+</th>
+<th style="text-align:right;">
+x_sd
+</th>
+<th style="text-align:right;">
+y_sd
+</th>
+<th style="text-align:right;">
+cor
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">dino</td>
-<td align="right">54.26</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.06</td>
+<tr>
+<td style="text-align:left;">
+dino
+</td>
+<td style="text-align:right;">
+54.26
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.06
+</td>
 </tr>
-<tr class="even">
-<td align="left">away</td>
-<td align="right">54.27</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.06</td>
+<tr>
+<td style="text-align:left;">
+away
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.06
+</td>
 </tr>
-<tr class="odd">
-<td align="left">h_lines</td>
-<td align="right">54.26</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.06</td>
+<tr>
+<td style="text-align:left;">
+h_lines
+</td>
+<td style="text-align:right;">
+54.26
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.06
+</td>
 </tr>
-<tr class="even">
-<td align="left">v_lines</td>
-<td align="right">54.27</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+v_lines
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="odd">
-<td align="left">x_shape</td>
-<td align="right">54.26</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.93</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+x_shape
+</td>
+<td style="text-align:right;">
+54.26
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.93
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="even">
-<td align="left">star</td>
-<td align="right">54.27</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.93</td>
-<td align="right">-0.06</td>
+<tr>
+<td style="text-align:left;">
+star
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.93
+</td>
+<td style="text-align:right;">
+-0.06
+</td>
 </tr>
-<tr class="odd">
-<td align="left">high_lines</td>
-<td align="right">54.27</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+high_lines
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="even">
-<td align="left">dots</td>
-<td align="right">54.26</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.93</td>
-<td align="right">-0.06</td>
+<tr>
+<td style="text-align:left;">
+dots
+</td>
+<td style="text-align:right;">
+54.26
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.93
+</td>
+<td style="text-align:right;">
+-0.06
+</td>
 </tr>
-<tr class="odd">
-<td align="left">circle</td>
-<td align="right">54.27</td>
-<td align="right">47.84</td>
-<td align="right">16.76</td>
-<td align="right">26.93</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+circle
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.76
+</td>
+<td style="text-align:right;">
+26.93
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="even">
-<td align="left">bullseye</td>
-<td align="right">54.27</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+bullseye
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="odd">
-<td align="left">slant_up</td>
-<td align="right">54.27</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+slant_up
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="even">
-<td align="left">slant_down</td>
-<td align="right">54.27</td>
-<td align="right">47.84</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+slant_down
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.84
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
-<tr class="odd">
-<td align="left">wide_lines</td>
-<td align="right">54.27</td>
-<td align="right">47.83</td>
-<td align="right">16.77</td>
-<td align="right">26.94</td>
-<td align="right">-0.07</td>
+<tr>
+<td style="text-align:left;">
+wide_lines
+</td>
+<td style="text-align:right;">
+54.27
+</td>
+<td style="text-align:right;">
+47.83
+</td>
+<td style="text-align:right;">
+16.77
+</td>
+<td style="text-align:right;">
+26.94
+</td>
+<td style="text-align:right;">
+-0.07
+</td>
 </tr>
 </tbody>
 </table>

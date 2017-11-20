@@ -41,26 +41,127 @@ summary_stats <- datasaurus_dozen %>%
   distinct() %>% 
   mutate_if(is_double, round, 2)
 
-kable(summary_stats)
+kable(summary_stats, format = "html")
 ```
 
-
-
-dataset       x_mean   y_mean    x_sd    y_sd     cor
------------  -------  -------  ------  ------  ------
-dino           54.26    47.83   16.77   26.94   -0.06
-away           54.27    47.83   16.77   26.94   -0.06
-h_lines        54.26    47.83   16.77   26.94   -0.06
-v_lines        54.27    47.84   16.77   26.94   -0.07
-x_shape        54.26    47.84   16.77   26.93   -0.07
-star           54.27    47.84   16.77   26.93   -0.06
-high_lines     54.27    47.84   16.77   26.94   -0.07
-dots           54.26    47.84   16.77   26.93   -0.06
-circle         54.27    47.84   16.76   26.93   -0.07
-bullseye       54.27    47.83   16.77   26.94   -0.07
-slant_up       54.27    47.83   16.77   26.94   -0.07
-slant_down     54.27    47.84   16.77   26.94   -0.07
-wide_lines     54.27    47.83   16.77   26.94   -0.07
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> dataset </th>
+   <th style="text-align:right;"> x_mean </th>
+   <th style="text-align:right;"> y_mean </th>
+   <th style="text-align:right;"> x_sd </th>
+   <th style="text-align:right;"> y_sd </th>
+   <th style="text-align:right;"> cor </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> dino </td>
+   <td style="text-align:right;"> 54.26 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> away </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> h_lines </td>
+   <td style="text-align:right;"> 54.26 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> v_lines </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> x_shape </td>
+   <td style="text-align:right;"> 54.26 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.93 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> star </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.93 </td>
+   <td style="text-align:right;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> high_lines </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> dots </td>
+   <td style="text-align:right;"> 54.26 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.93 </td>
+   <td style="text-align:right;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> circle </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.76 </td>
+   <td style="text-align:right;"> 26.93 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> bullseye </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> slant_up </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> slant_down </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.84 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wide_lines </td>
+   <td style="text-align:right;"> 54.27 </td>
+   <td style="text-align:right;"> 47.83 </td>
+   <td style="text-align:right;"> 16.77 </td>
+   <td style="text-align:right;"> 26.94 </td>
+   <td style="text-align:right;"> -0.07 </td>
+  </tr>
+</tbody>
+</table>
 
 ## Scatter plots
 
